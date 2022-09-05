@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Vue.js 演習問題</title>
+    <link rel="stylesheet" href="style.css" >
+    <script src=
+      "https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js">
+    </script>
+  </head>
+  
+  <body>
+    <h2>入力した数値のたし算</h2>
+    <div id="app">
+        <p>数値１＝</p>
+        <input v-model.number="Number" type=number>
+        <p>数値２＝</p>
+        <input v-model.number="pulaNumber" type=number>
+
+        <p>足し算：{{ Number }} + {{ pulaNumber }} = {{ Number + pulaNumber }}</p>
+
+        
+      
+
+
+
+
+
+    </div>
+
+    <script>
+      new Vue({
+        el: '#app',
+
+        data: {
+            Number:0,
+            pulaNumber:0,
+        }
+
+
+
+
+      })
+    </script>
+  </body>
+
+</html>
