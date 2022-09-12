@@ -13,9 +13,9 @@
     <h2>trueのときだけ表示する例</h2>
     <div id="app">
         <input type="checkbox" v-model="myVisible">Google本社
-        <p v-if="myVisible">
+        <p v-if="myVisible">カエル口を開ける
             <img v-bind:src="googleImg"> 
-        <p v-else="myVisible">
+        <p v-else="myVisible">カエル口を閉じる
             <img v-bind:src="microsoftImg">
       
 
@@ -30,8 +30,8 @@
           el: '#app',
           data: {
             myVisible: false,
-            googleImg: 'Google.jpg',
-            microsoftImg: 'Microsoft.jpg'
+            googleImg: 'face1.png',
+            microsoftImg: 'face2.png'
           }
         })
       </script>
