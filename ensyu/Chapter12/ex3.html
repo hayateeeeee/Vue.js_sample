@@ -11,9 +11,29 @@
   <body>
     <h2>コンポーネントを作って表示する例</h2>
     <div id="app">
-      <greeting-jp></greeting-jp>
-      <greeting-en></greeting-en>
-      <greeting-fr></greeting-fr>
+      <table border="1">
+        <caption>
+          各国の挨拶
+        </caption>
+        <tr>
+          <th>日本</th>
+          <td>
+            <greeting-jp></greeting-jp>
+          </td>
+        </tr>
+        <tr>
+          <th>アメリカ</th>
+          <td>
+            <greeting-en></greeting-en>
+          </td>
+        </tr>
+        <tr>
+          <th>フランス</th>
+          <td>
+            <greeting-fr></greeting-fr>
+          </td>
+        </tr>
+      </table>
     </div>
 
     <script>
